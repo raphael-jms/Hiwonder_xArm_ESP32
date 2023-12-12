@@ -128,12 +128,13 @@ lib_deps =
     https://github.com/micro-ROS/micro_ros_platformio
 ```
 
-In the terminal again, ensure that ROS is not sourced i.e. `source /opt/ros/humble/setup.bash` is not called in the terminal or in `~/.bashrc`, and run the following, ensure it is successful:
+In the terminal again in `/home/user_Ubuntu/hiwonder_xArm_ws/src/Hiwonder_xArm_ESP32/Hiwonder_xArm_ROS2`, ensure that ROS is not sourced i.e. `source /opt/ros/humble/setup.bash` is not called in the terminal or in `~/.bashrc`, and run the following, ensure it is successful:
 ```console
 pio lib install # Install dependencies
 pio run # Build the firmware
 pio run --target upload # Flash the firmware
 ```
+If it is not, try `pip install -U platformio`
 
 To trigger a library build and apply library modification on the platformIO build, one can run:
 ```console
